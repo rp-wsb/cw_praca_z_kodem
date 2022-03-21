@@ -1,4 +1,6 @@
 test:
 	pip install -r requirements.txt
 run:
-	flask run
+	python -m flask run
+pyl:
+	pylint app.py
