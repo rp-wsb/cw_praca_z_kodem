@@ -1,0 +1,9 @@
+name: My first Workflow
+on: [push]
+jobs:
+	Github-actions-demo:
+	 runs-on: python3 --version
+	 runs-on: lsb_release -a
+	 steps:
+	 ###edit 
+
