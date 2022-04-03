@@ -1,4 +1,4 @@
-name: Github - first
+name: Github-first
 on: [push]
 jobs:	
     Step_1:
