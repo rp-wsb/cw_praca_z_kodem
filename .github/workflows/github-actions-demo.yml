@@ -5,23 +5,22 @@ jobs:
        runs-on: ubuntu-latest
        steps:
          - name: python version
-         - run: 
+           run: 
              python3 --version
          - name: docker version
-         - run:
+           run:
              docker --version 
     Step_2:
        runs-on: ubuntu-latest
        steps:
-         - name: testing
          - uses: actions/checkout@v2
          - name: Install pylint
-         - run:
+           run:
              pylint app.py
     Step_3:
        runs-on: ubuntu-latest
        steps:
-         - name: build a image
          - uses: actions/checkout@v2
-         - run:
+         - name: build a image
+           run:
              sudo docker build -t test-flask-app .
