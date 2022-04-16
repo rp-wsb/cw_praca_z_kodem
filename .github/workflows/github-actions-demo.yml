@@ -23,5 +23,5 @@ jobs:
        steps:
          - name: build a image
            uses: actions/checkout@v2
-           run:
+         - run:
              sudo docker build -t test-flask-app .
